@@ -1,0 +1,207 @@
+*{
+  user-select: none;
+}
+.overflow-hidden{
+  overflow-x: hidden;
+}
+.overflow-y{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.App {
+  text-align: center;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+nav.navbar{
+  width: 99vw;
+  background-color: rgba(34, 34, 34, 1);
+  border-color: rgba(34, 34, 34, 1);
+  transition: all linear 0.3s;
+  z-index: 1;
+}
+.navbar-brand>img {
+  width: 3vw;
+}
+.landing{
+  margin-top: -2vh;
+  width: 100vw;
+  height: 94.65vh;
+  overflow: hidden;
+}
+.landing video{
+}
+.landing-screen{
+  margin-top: -60vh;
+  color: white;
+}
+.landing-screen h1{
+  margin: 0 auto;
+  position: relative;
+  font-size: 170px;
+  text-align: center;
+}
+.landing-screen h2{
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: -2vh;
+  padding-bottom: 21vh;
+}
+.col{
+  text-align: center;
+  transition: all linear 0.3s;
+  padding: 0 5vw;
+  display: inline-block;
+}
+.col:hover{
+  margin-top: -5vh;
+}
+.about-us {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  padding-top: 19vh;
+  /*padding-bottom: 3vh;*/
+  width: 100vw;
+  z-index: -1;
+  margin: 0 auto;
+  display: block;
+}
+.about-us .jumbotron{
+  text-align: left;
+  padding-left: 5vw;
+  padding-right: 20vw;
+  padding-top: 10vh;
+  background: url("./res/back2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-bottom: 15vh;
+  margin-bottom: 0;
+}
+.about-us .jumbotron h1{
+  padding-bottom: 8vh;
+  padding-top: 7vh;
+  filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.6));
+}
+.about-us .jumbotron p{
+  color: white;
+  filter: drop-shadow(0px 1px 10px rgba(50,50,50,1));
+}
+.thumbnail img{
+  width: 5vw;
+  padding-top: 2vh;
+}
+
+.login-screen{
+  position: relative;
+  margin-top: -65vh;
+}
+.login-screen .col{
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+.login-screen .col:hover{
+  margin-top: -1.5vh;
+}
+.login-screen h1{
+  filter: drop-shadow(0 2px 10px rgba(100,100,100,0.5));
+  z-index: 1;
+  padding-bottom: -5vh;
+  font-size: 72px;
+  color: white;
+  display: block;
+}
+.partner-screen{
+  margin-top: -75vh;
+}
+.form-item{
+  margin: 0 auto;
+  width: 30vw;
+}
+.input-item{
+  padding-bottom: 0.5vh;
+}
+.partner-screen textarea{
+  max-width: 30vw;
+  width: 30vw;
+  min-width: 30vw;
+  min-height: 10vh;
+  height: 10vh;
+  max-height: 30vh;
+}
+.partner-screen button{
+  position: relative;
+  width: 30vw;
+  outline: none;
+  border: none;
+}
+.panel{
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+.appraiser-login .well{
+  cursor: pointer;
+  margin-top: 2vh;
+}
+.appraiser-login .well:hover{
+  background: rgba(40,80,150,0.7);
+  color: white;
+}
+.appraiser-login button{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.signup-screen{
+  width: 100vw;
+  overflow-y: scroll;
+}
+.signup-screen #signup-item input{
+  padding-bottom: 0.5vh;
+}
+.signup-item{
+  position: relative;
+  width: 100%;
+  padding-bottom: 0.5vh;
+}
+.signup-item input{
+  border-width: 1.5px;
+}
+.signup-button{
+  width: 70vw;
+  display: block;
+  padding: 0.3vh 0;
+  margin-top: 0.5vh;
+}
+.products-panel-form{
+  height: 70vh;
+  overflow-y: scroll;
+}
+.well-top{
+  width: 70vw;
+  margin: 0 auto;
+}
+.panel{
+  margin: 0 auto;
+  width:  40vw;
+}
+.awaiting-approval{
+  margin: 0 auto;
+  width: 70vw;
+}
+.awaiting-approval img {
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+}
+.footer {
+  color: black;
+  z-index: 1;
+  margin-top: 100vh;
+}
