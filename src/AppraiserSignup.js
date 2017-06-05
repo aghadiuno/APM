@@ -420,7 +420,7 @@ class AppraiserSignup extends Component{
           </Panel>
           <EOInsurance uploadHandle={this.uploadHandler} currProgress={this.state.eoi} />
           <LicenseInformation uaid={this.UAID}/>
-          <Panel header="Supporting Documents">
+          <Panel header="Supporting Documents" >
             <FormGroup>
               <Well>
                 <InputGroup className="signup-item">
