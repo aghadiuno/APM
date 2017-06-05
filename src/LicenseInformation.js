@@ -10,6 +10,7 @@ class LicenseInformation extends Component {
         licenses: [{idLN:'LiLN1', idED:'LiED1', idD: 'LiD1', idState: 'licensestate1', idDP: 'LiDP1', now: 0}],
         count: 2
       }
+      this.formData = this.props.formData;
       this.createLicense = this.createLicense.bind(this);
       this.uploadHandler = this.uploadHandler.bind(this);
     }
@@ -34,6 +35,9 @@ class LicenseInformation extends Component {
       }, () => {
         console.log("There was an error uploading your file, please try again.");
       }, (file) => {
+        firebase.storage().ref(`${this.props.uaid}/Licenses/${event.target.id}`).getDownloadURL().then((url) =>{
+          this.formData['userFolder'][event.target.id] = url;
+        })
         // COMPLETE
         console.log("completed");
       })

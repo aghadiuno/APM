@@ -77,9 +77,6 @@ class AppraiserSignup extends Component{
       pricings: false,
       userFolder: {
         eoi: false,
-        LiD1: false,
-        LiD2: false,
-        LiD3: false,
         w9: false,
         resume: false,
         sa: false,
@@ -419,7 +416,7 @@ class AppraiserSignup extends Component{
             </FormGroup>
           </Panel>
           <EOInsurance uploadHandle={this.uploadHandler} currProgress={this.state.eoi} />
-          <LicenseInformation uaid={this.UAID}/>
+          <LicenseInformation uaid={this.UAID} formData={this.formData}/>
           <Panel header="Supporting Documents" >
             <FormGroup>
               <Well>
